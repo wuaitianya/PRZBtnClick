@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C106D30D210AAEEC00284C29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D30C210AAEEC00284C29 /* AppDelegate.m */; };
+		C106D310210AAEEC00284C29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D30F210AAEEC00284C29 /* ViewController.m */; };
+		C106D313210AAEEC00284C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C106D311210AAEEC00284C29 /* Main.storyboard */; };
+		C106D315210AAEED00284C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C106D314210AAEED00284C29 /* Assets.xcassets */; };
+		C106D318210AAEED00284C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C106D316210AAEED00284C29 /* LaunchScreen.storyboard */; };
+		C106D31B210AAEED00284C29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D31A210AAEED00284C29 /* main.m */; };
+		C106D35B210AAEFF00284C29 /* UIImage+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D324210AAEFE00284C29 /* UIImage+PRZCommon.m */; };
+		C106D35C210AAEFF00284C29 /* UIScrollView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D326210AAEFE00284C29 /* UIScrollView+PRZCommon.m */; };
+		C106D35D210AAEFF00284C29 /* UILabel+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D32A210AAEFE00284C29 /* UILabel+PRZCommon.m */; };
+		C106D35E210AAEFF00284C29 /* UISegmentedControl+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D32D210AAEFE00284C29 /* UISegmentedControl+PRZCommon.m */; };
+		C106D35F210AAEFF00284C29 /* UIColor+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D32F210AAEFE00284C29 /* UIColor+PRZCommon.m */; };
+		C106D360210AAEFF00284C29 /* UIWebView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D332210AAEFE00284C29 /* UIWebView+PRZCommon.m */; };
+		C106D361210AAEFF00284C29 /* UIView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D335210AAEFE00284C29 /* UIView+PRZCommon.m */; };
+		C106D362210AAEFF00284C29 /* UIPickerView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D339210AAEFE00284C29 /* UIPickerView+PRZCommon.m */; };
+		C106D363210AAEFF00284C29 /* UIDatePicker+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D33B210AAEFE00284C29 /* UIDatePicker+PRZCommon.m */; };
+		C106D364210AAEFF00284C29 /* UITextView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D33E210AAEFE00284C29 /* UITextView+PRZCommon.m */; };
+		C106D365210AAEFF00284C29 /* UICollectionView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D341210AAEFE00284C29 /* UICollectionView+PRZCommon.m */; };
+		C106D366210AAEFF00284C29 /* UIImageView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D344210AAEFE00284C29 /* UIImageView+PRZCommon.m */; };
+		C106D367210AAEFF00284C29 /* NSString+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D347210AAEFE00284C29 /* NSString+PRZCommon.m */; };
+		C106D368210AAEFF00284C29 /* UIViewController+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D34B210AAEFE00284C29 /* UIViewController+PRZCommon.m */; };
+		C106D369210AAEFF00284C29 /* UITableView+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D34E210AAEFE00284C29 /* UITableView+PRZCommon.m */; };
+		C106D36A210AAEFF00284C29 /* NSObject+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D350210AAEFE00284C29 /* NSObject+PRZCommon.m */; };
+		C106D36B210AAEFF00284C29 /* UISlider+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D354210AAEFE00284C29 /* UISlider+PRZCommon.m */; };
+		C106D36C210AAEFF00284C29 /* UIButton+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D356210AAEFE00284C29 /* UIButton+PRZCommon.m */; };
+		C106D36D210AAEFF00284C29 /* UITextField+PRZCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = C106D35A210AAEFE00284C29 /* UITextField+PRZCommon.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C106D308210AAEEC00284C29 /* PRZBtnClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRZBtnClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C106D30B210AAEEC00284C29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C106D30C210AAEEC00284C29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C106D30E210AAEEC00284C29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C106D30F210AAEEC00284C29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C106D312210AAEEC00284C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C106D314210AAEED00284C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C106D317210AAEED00284C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C106D319210AAEED00284C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C106D31A210AAEED00284C29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C106D323210AAEFE00284C29 /* UIImage+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D324210AAEFE00284C29 /* UIImage+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D326210AAEFE00284C29 /* UIScrollView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D327210AAEFE00284C29 /* UIScrollView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D329210AAEFE00284C29 /* UILabel+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D32A210AAEFE00284C29 /* UILabel+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D32C210AAEFE00284C29 /* UISegmentedControl+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D32D210AAEFE00284C29 /* UISegmentedControl+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D32F210AAEFE00284C29 /* UIColor+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D330210AAEFE00284C29 /* UIColor+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D332210AAEFE00284C29 /* UIWebView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D333210AAEFE00284C29 /* UIWebView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D335210AAEFE00284C29 /* UIView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D336210AAEFE00284C29 /* UIView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D338210AAEFE00284C29 /* UIPickerView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D339210AAEFE00284C29 /* UIPickerView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D33B210AAEFE00284C29 /* UIDatePicker+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D33C210AAEFE00284C29 /* UIDatePicker+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D33E210AAEFE00284C29 /* UITextView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D33F210AAEFE00284C29 /* UITextView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D341210AAEFE00284C29 /* UICollectionView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D342210AAEFE00284C29 /* UICollectionView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D344210AAEFE00284C29 /* UIImageView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D345210AAEFE00284C29 /* UIImageView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D347210AAEFE00284C29 /* NSString+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D348210AAEFE00284C29 /* NSString+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D34A210AAEFE00284C29 /* UIViewController+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D34B210AAEFE00284C29 /* UIViewController+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D34D210AAEFE00284C29 /* UITableView+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D34E210AAEFE00284C29 /* UITableView+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D350210AAEFE00284C29 /* NSObject+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D351210AAEFE00284C29 /* NSObject+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D353210AAEFE00284C29 /* UISlider+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D354210AAEFE00284C29 /* UISlider+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D356210AAEFE00284C29 /* UIButton+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PRZCommon.m"; sourceTree = "<group>"; };
+		C106D357210AAEFE00284C29 /* UIButton+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D359210AAEFE00284C29 /* UITextField+PRZCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PRZCommon.h"; sourceTree = "<group>"; };
+		C106D35A210AAEFE00284C29 /* UITextField+PRZCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PRZCommon.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C106D305210AAEEC00284C29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C106D2FF210AAEEC00284C29 = {
+			isa = PBXGroup;
+			children = (
+				C106D30A210AAEEC00284C29 /* PRZBtnClick */,
+				C106D309210AAEEC00284C29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C106D309210AAEEC00284C29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C106D308210AAEEC00284C29 /* PRZBtnClick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C106D30A210AAEEC00284C29 /* PRZBtnClick */ = {
+			isa = PBXGroup;
+			children = (
+				C106D321210AAEFE00284C29 /* Category */,
+				C106D30B210AAEEC00284C29 /* AppDelegate.h */,
+				C106D30C210AAEEC00284C29 /* AppDelegate.m */,
+				C106D30E210AAEEC00284C29 /* ViewController.h */,
+				C106D30F210AAEEC00284C29 /* ViewController.m */,
+				C106D311210AAEEC00284C29 /* Main.storyboard */,
+				C106D314210AAEED00284C29 /* Assets.xcassets */,
+				C106D316210AAEED00284C29 /* LaunchScreen.storyboard */,
+				C106D319210AAEED00284C29 /* Info.plist */,
+				C106D31A210AAEED00284C29 /* main.m */,
+			);
+			path = PRZBtnClick;
+			sourceTree = "<group>";
+		};
+		C106D321210AAEFE00284C29 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C106D322210AAEFE00284C29 /* UIImage */,
+				C106D325210AAEFE00284C29 /* UIScrollView */,
+				C106D328210AAEFE00284C29 /* UILabel */,
+				C106D32B210AAEFE00284C29 /* UISegmentedControl */,
+				C106D32E210AAEFE00284C29 /* UIColor */,
+				C106D331210AAEFE00284C29 /* UIWebView */,
+				C106D334210AAEFE00284C29 /* UIView */,
+				C106D337210AAEFE00284C29 /* UIPickerView */,
+				C106D33A210AAEFE00284C29 /* UIDatePicker */,
+				C106D33D210AAEFE00284C29 /* UITextView */,
+				C106D340210AAEFE00284C29 /* UICollectionView */,
+				C106D343210AAEFE00284C29 /* UIImageView */,
+				C106D346210AAEFE00284C29 /* NSString */,
+				C106D349210AAEFE00284C29 /* UIViewController */,
+				C106D34C210AAEFE00284C29 /* UITableView */,
+				C106D34F210AAEFE00284C29 /* NSObject */,
+				C106D352210AAEFE00284C29 /* UISlider */,
+				C106D355210AAEFE00284C29 /* UIButon */,
+				C106D358210AAEFE00284C29 /* UITextField */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C106D322210AAEFE00284C29 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				C106D323210AAEFE00284C29 /* UIImage+PRZCommon.h */,
+				C106D324210AAEFE00284C29 /* UIImage+PRZCommon.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		C106D325210AAEFE00284C29 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D326210AAEFE00284C29 /* UIScrollView+PRZCommon.m */,
+				C106D327210AAEFE00284C29 /* UIScrollView+PRZCommon.h */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		C106D328210AAEFE00284C29 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				C106D329210AAEFE00284C29 /* UILabel+PRZCommon.h */,
+				C106D32A210AAEFE00284C29 /* UILabel+PRZCommon.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		C106D32B210AAEFE00284C29 /* UISegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				C106D32C210AAEFE00284C29 /* UISegmentedControl+PRZCommon.h */,
+				C106D32D210AAEFE00284C29 /* UISegmentedControl+PRZCommon.m */,
+			);
+			path = UISegmentedControl;
+			sourceTree = "<group>";
+		};
+		C106D32E210AAEFE00284C29 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				C106D32F210AAEFE00284C29 /* UIColor+PRZCommon.m */,
+				C106D330210AAEFE00284C29 /* UIColor+PRZCommon.h */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		C106D331210AAEFE00284C29 /* UIWebView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D332210AAEFE00284C29 /* UIWebView+PRZCommon.m */,
+				C106D333210AAEFE00284C29 /* UIWebView+PRZCommon.h */,
+			);
+			path = UIWebView;
+			sourceTree = "<group>";
+		};
+		C106D334210AAEFE00284C29 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D335210AAEFE00284C29 /* UIView+PRZCommon.m */,
+				C106D336210AAEFE00284C29 /* UIView+PRZCommon.h */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		C106D337210AAEFE00284C29 /* UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D338210AAEFE00284C29 /* UIPickerView+PRZCommon.h */,
+				C106D339210AAEFE00284C29 /* UIPickerView+PRZCommon.m */,
+			);
+			path = UIPickerView;
+			sourceTree = "<group>";
+		};
+		C106D33A210AAEFE00284C29 /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C106D33B210AAEFE00284C29 /* UIDatePicker+PRZCommon.m */,
+				C106D33C210AAEFE00284C29 /* UIDatePicker+PRZCommon.h */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		C106D33D210AAEFE00284C29 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D33E210AAEFE00284C29 /* UITextView+PRZCommon.m */,
+				C106D33F210AAEFE00284C29 /* UITextView+PRZCommon.h */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		C106D340210AAEFE00284C29 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D341210AAEFE00284C29 /* UICollectionView+PRZCommon.m */,
+				C106D342210AAEFE00284C29 /* UICollectionView+PRZCommon.h */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		C106D343210AAEFE00284C29 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D344210AAEFE00284C29 /* UIImageView+PRZCommon.m */,
+				C106D345210AAEFE00284C29 /* UIImageView+PRZCommon.h */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		C106D346210AAEFE00284C29 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				C106D347210AAEFE00284C29 /* NSString+PRZCommon.m */,
+				C106D348210AAEFE00284C29 /* NSString+PRZCommon.h */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		C106D349210AAEFE00284C29 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C106D34A210AAEFE00284C29 /* UIViewController+PRZCommon.h */,
+				C106D34B210AAEFE00284C29 /* UIViewController+PRZCommon.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		C106D34C210AAEFE00284C29 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				C106D34D210AAEFE00284C29 /* UITableView+PRZCommon.h */,
+				C106D34E210AAEFE00284C29 /* UITableView+PRZCommon.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		C106D34F210AAEFE00284C29 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				C106D350210AAEFE00284C29 /* NSObject+PRZCommon.m */,
+				C106D351210AAEFE00284C29 /* NSObject+PRZCommon.h */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		C106D352210AAEFE00284C29 /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				C106D353210AAEFE00284C29 /* UISlider+PRZCommon.h */,
+				C106D354210AAEFE00284C29 /* UISlider+PRZCommon.m */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
+		C106D355210AAEFE00284C29 /* UIButon */ = {
+			isa = PBXGroup;
+			children = (
+				C106D356210AAEFE00284C29 /* UIButton+PRZCommon.m */,
+				C106D357210AAEFE00284C29 /* UIButton+PRZCommon.h */,
+			);
+			path = UIButon;
+			sourceTree = "<group>";
+		};
+		C106D358210AAEFE00284C29 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				C106D359210AAEFE00284C29 /* UITextField+PRZCommon.h */,
+				C106D35A210AAEFE00284C29 /* UITextField+PRZCommon.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C106D307210AAEEC00284C29 /* PRZBtnClick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C106D31E210AAEED00284C29 /* Build configuration list for PBXNativeTarget "PRZBtnClick" */;
+			buildPhases = (
+				C106D304210AAEEC00284C29 /* Sources */,
+				C106D305210AAEEC00284C29 /* Frameworks */,
+				C106D306210AAEEC00284C29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRZBtnClick;
+			productName = PRZBtnClick;
+			productReference = C106D308210AAEEC00284C29 /* PRZBtnClick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C106D300210AAEEC00284C29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "雾霭天涯";
+				TargetAttributes = {
+					C106D307210AAEEC00284C29 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = C106D303210AAEEC00284C29 /* Build configuration list for PBXProject "PRZBtnClick" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C106D2FF210AAEEC00284C29;
+			productRefGroup = C106D309210AAEEC00284C29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C106D307210AAEEC00284C29 /* PRZBtnClick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C106D306210AAEEC00284C29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106D318210AAEED00284C29 /* LaunchScreen.storyboard in Resources */,
+				C106D315210AAEED00284C29 /* Assets.xcassets in Resources */,
+				C106D313210AAEEC00284C29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C106D304210AAEEC00284C29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C106D361210AAEFF00284C29 /* UIView+PRZCommon.m in Sources */,
+				C106D363210AAEFF00284C29 /* UIDatePicker+PRZCommon.m in Sources */,
+				C106D365210AAEFF00284C29 /* UICollectionView+PRZCommon.m in Sources */,
+				C106D364210AAEFF00284C29 /* UITextView+PRZCommon.m in Sources */,
+				C106D35D210AAEFF00284C29 /* UILabel+PRZCommon.m in Sources */,
+				C106D369210AAEFF00284C29 /* UITableView+PRZCommon.m in Sources */,
+				C106D362210AAEFF00284C29 /* UIPickerView+PRZCommon.m in Sources */,
+				C106D368210AAEFF00284C29 /* UIViewController+PRZCommon.m in Sources */,
+				C106D360210AAEFF00284C29 /* UIWebView+PRZCommon.m in Sources */,
+				C106D367210AAEFF00284C29 /* NSString+PRZCommon.m in Sources */,
+				C106D366210AAEFF00284C29 /* UIImageView+PRZCommon.m in Sources */,
+				C106D310210AAEEC00284C29 /* ViewController.m in Sources */,
+				C106D36A210AAEFF00284C29 /* NSObject+PRZCommon.m in Sources */,
+				C106D36C210AAEFF00284C29 /* UIButton+PRZCommon.m in Sources */,
+				C106D31B210AAEED00284C29 /* main.m in Sources */,
+				C106D35F210AAEFF00284C29 /* UIColor+PRZCommon.m in Sources */,
+				C106D35C210AAEFF00284C29 /* UIScrollView+PRZCommon.m in Sources */,
+				C106D36D210AAEFF00284C29 /* UITextField+PRZCommon.m in Sources */,
+				C106D36B210AAEFF00284C29 /* UISlider+PRZCommon.m in Sources */,
+				C106D35E210AAEFF00284C29 /* UISegmentedControl+PRZCommon.m in Sources */,
+				C106D30D210AAEEC00284C29 /* AppDelegate.m in Sources */,
+				C106D35B210AAEFF00284C29 /* UIImage+PRZCommon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C106D311210AAEEC00284C29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C106D312210AAEEC00284C29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C106D316210AAEED00284C29 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C106D317210AAEED00284C29 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C106D31C210AAEED00284C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C106D31D210AAEED00284C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C106D31F210AAEED00284C29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R573ZFG6L7;
+				INFOPLIST_FILE = PRZBtnClick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuAiTianYa.PRZBtnClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C106D320210AAEED00284C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R573ZFG6L7;
+				INFOPLIST_FILE = PRZBtnClick/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wuAiTianYa.PRZBtnClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C106D303210AAEEC00284C29 /* Build configuration list for PBXProject "PRZBtnClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C106D31C210AAEED00284C29 /* Debug */,
+				C106D31D210AAEED00284C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C106D31E210AAEED00284C29 /* Build configuration list for PBXNativeTarget "PRZBtnClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C106D31F210AAEED00284C29 /* Debug */,
+				C106D320210AAEED00284C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C106D300210AAEEC00284C29 /* Project object */;
+}
