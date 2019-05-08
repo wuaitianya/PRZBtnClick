@@ -81,7 +81,7 @@
     return image;
 }
 
-+ (UIImage *) imageByScalingAndCroppingForSourceImage:(UIImage *)sourceImage targetSize:(CGSize)targetSize {
++ (UIImage *) imageByScalingAndCroppingForSourceImage:(UIImage *)sourceImage targetSize:(CGSize)targetSize limitedMemsize:(CGFloat)memsize {
     UIImage *newImage = nil;
     CGSize imageSize = sourceImage.size;
     CGFloat width = imageSize.width;
@@ -124,13 +124,38 @@
     [sourceImage drawInRect:thumbnailRect];
     
     newImage = UIGraphicsGetImageFromCurrentImageContext();
-    if(newImage == nil) NSLog(@"could not scale image");
-    
+    if(newImage == nil){
+        NSLog(@"could not scale image");
+    }
     //pop the context to get back to the default
     UIGraphicsEndImageContext();
+    
+    //进行内存大小限制 注意 memsize 外部传入0 但是此处获取可能是0.0000001，不是完全精准
+    if (memsize > 0.02 && newImage) {
+        NSData *originalData = UIImagePNGRepresentation(newImage);
+        double dataLength = [originalData length] * 1.0;
+        if (dataLength > memsize) {
+            NSData *compressData = UIImageJPEGRepresentation(newImage, 0.25);
+            newImage = [UIImage imageWithData:compressData];
+        }
+    }
+    
     return newImage;
 }
-
++ (NSString*)calulateImageFileSize:(UIImage *)image {
+    NSData *data = UIImagePNGRepresentation(image);
+    if (!data) {
+        data = UIImageJPEGRepresentation(image, 1.0);//需要改成0.5才接近原图片大小，原因请看下文
+    }
+    double dataLength = [data length] * 1.0;
+    NSArray *typeArray = @[@"bytes",@"KB",@"MB",@"GB",@"TB",@"PB", @"EB",@"ZB",@"YB"];
+    NSInteger index = 0;
+    while (dataLength > 1024) {
+        dataLength /= 1024.0;
+        index ++;
+    }
+    return [NSString stringWithFormat:@"image = %.3f %@",dataLength,typeArray[index]];
+}
 
 - (UIImage*)imageRotatedByDegrees:(CGFloat)degrees
 {

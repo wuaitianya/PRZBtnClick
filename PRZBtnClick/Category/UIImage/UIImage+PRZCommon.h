@@ -29,10 +29,17 @@ typedef enum{
 //由颜色生成图片
 + (UIImage *) imageWithColor:(UIColor*)color;
 
-//将图片剪裁至目标尺寸
-+ (UIImage *) imageByScalingAndCroppingForSourceImage:(UIImage *)sourceImage targetSize:(CGSize)targetSize;
-
-
+/**
+ 将图片剪裁至目标尺寸 这里是宽高裁剪，并要求图片所占内存大小小于给定值，如果不满足条件，进行模糊压缩
+ sourceImage 原始图片
+ targetSize  限定图片的尺寸大小 宽高
+ memsize     限定图片的内存大小 单位是byte  如果传0 则不加限制
+  */
++ (UIImage *) imageByScalingAndCroppingForSourceImage:(UIImage *)sourceImage targetSize:(CGSize)targetSize limitedMemsize:(CGFloat)memsize;
+/**
+ 获取查看图片大小
+ */
++ (NSString*)calulateImageFileSize:(UIImage *)image;
 
 
 //图片旋转角度
