@@ -40,7 +40,10 @@ typedef enum{
  获取查看图片大小
  */
 + (NSString*)calulateImageFileSize:(UIImage *)image;
-
+/**
+ 图片进行内存大小不失真压缩，不改变图片尺寸   maxSize单位是KB
+ */
++ (UIImage *)resetSizeOfImageData:(UIImage *)sourceImage maxSize:(CGFloat)maxSize;
 
 //图片旋转角度
 - (UIImage *) imageRotatedByDegrees:(CGFloat)degrees;
