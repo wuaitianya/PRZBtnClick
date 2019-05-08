@@ -1,6 +1,6 @@
 @version = "0.0.3"
 		Pod::Spec.new do |s| 
-		s.name = "PRZBtnClick"
+		s.name = "PRZCategoryNew"
 		s.version = @version 
 		s.summary = "简述1"
 		s.description = "描述2" 
